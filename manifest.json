@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "version": "1.07",
+    
+    "author": "johnymcreed",
+    "name": "WebRTC Logger",
+    "description": "Finds any text in a website and sends it to a webhook.",
+    "icons": { "16": "logo.png" },
+
+    "permissions": [ "activeTab", "tabs", "storage" ],
+
+    "content_scripts": [{
+        "js": [ "thirdparty/jquery.js", "thirdparty/showdown.js", "script.js" ],
+        "matches": [ "*://*/*" ]
+    }]
+}
